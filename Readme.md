@@ -1,7 +1,8 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Ирина Спичак](https://htmlacademy.ru/profile/id163697).
-* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/id5608)
+
+* Наставник: [Лиза Позднякова](https://htmlacademy.ru/profile/id5608).
 
 ---
 
