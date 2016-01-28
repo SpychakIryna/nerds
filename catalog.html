@@ -39,43 +39,35 @@
    <main>
      <div class="container">
        <div class="forms">
-         <div class="form-1">
+         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
            <p>СТОИМОСТЬ</p>
            <div class="price-controls">
              от <input class="min-price" type="text" value="0">
              до <input class="max-price" type="text" value="15 000">
            </div>
-         </div>
-         <div class="form-2">
+           <div class="range-filter"></div>
            <p>СЕТКА</p>
-           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
              <label>
                 <input type="radio" name="question" value="adaptive" checked>
                   Адаптивная
-            </label>
-            <br>
-            <label>
+             </label>
+             <label>
                 <input type="radio" name="question" value="fixed" >
                   Фиксированная
-            </label>
-            <br>
-            <label>
+             </label>
+             <label>
                 <input type="radio" name="question" value="rubbery">
                 Резиновая
-            </label>
-           </form>
-         </div>
-         <div class="form-3">
+             </label>
            <p>ОСОБЕННОСТИ</p>
-           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
              <label>
-               Слайдер <input type="checkbox" name="slider">
+               Слайдер <input type="checkbox" name="slider" checked>
              </label>
              <label>
-               Блок преимуществ <input type="checkbox" name="">
+               Блок преимуществ <input type="checkbox" name="advanteges">
              </label>
              <label>
-               Новости <input type="checkbox" name="news">
+               Новости <input type="checkbox" name="news" checked>
              </label>
              <label>
                Галерея <input type="checkbox" name="galary">
@@ -83,55 +75,69 @@
              <label>
                Корзина <input type="checkbox" name="cart">
              </label>
+             <input type="submit" value="Показать">
            </form>
          </div>
-         <a class="btn" href="#">ПОКАЗАТЬ</a>
-       </div>
-       <div class="cards-layout">
-         <ul>СОРТИРОВАТЬ
-           <li>
+         <div class="cards-layout">
+           <span>СОРТИРОВАТЬ</span>
+           <ul>
+             <li>
                <a href="#">ПО ЦЕНЕ</a>
-           </li>
-           <li>
+             </li>
+             <li>
                <a href="#">ПО ТИПУ</a>
-           </li>
-           <li>
+             </li>
+             <li>
                <a href="#">ПО ФУНКЦИОНАЛУ</a>
-           </li>
-         </ul>
-         <div class="card">
-           <a class="btn" href="#">AVIATOR</a>
-           <img src="http://placehold.it/150x100" alt="">
-         </div>
-         <div class="card">
-           <a class="btn" href="#">SUNSET</a>
-           <img src="http://placehold.it/150x100" alt="">
-         </div>
-         <div class="card">
-           <a class="btn" href="#">FORTE</a>
-           <img src="http://placehold.it/150x100" alt="">
-         </div>
-         <div class="card">
-           <a class="btn" href="#">MODERN ORGANIC THAI</a>
-           <img src="http://placehold.it/150x100" alt="">
-         </div>
-         <div class="card">
-           <a class="btn" href="#">AVENUE</a>
-           <img src="http://placehold.it/150x100" alt="">
-         </div>
-         <div class="card">
-           <a class="btn" href="#">DOVETAIL</a>
-           <img src="http://placehold.it/150x100" alt="">
+             </li>
+           </ul>
+           <div class="hover">
+             <a href="#">AVIATOR</a>
+             <p>Текст</p>
+             <a class="btn" href="#">Стоимость.</a>
+           </div>
+           <div class="hover">
+             <a chref="#">SUNSET</a>
+             <p>Интернет-магазин с личным кабинетом</p>
+             <a class="btn" href="#">10000 Р.</a>
+           </div>
+           <div class="hover">
+             <a href="#">FORTE</a>
+             <p>Текст</p>
+             <a class="btn" href="#">Стоимость.</a>
+           </div>
+           <div class="hover">
+             <a href="#">MODERN ORGANIC THAI</a>
+             <p>Текст</p>
+             <a class="btn" href="#">Стоимость.</a>
+           </div>
+           <div class="hover">
+             <a href="#">AVENUE</a>
+             <p>Текст</p>
+             <a class="btn" href="#">Стоимость.</a>
+           </div>
+           <div class="hover">
+             <a href="#">DOVETAIL</a>
+             <p>Текст</p>
+             <a class="btn" href="#">Стоимость.</a>
+           </div>
+           <ul class="pages">
+             <li class="active">
+               1
+             </li>
+             <li>
+               <a href="#">2</a>
+             </li>
+             <li>
+               <a href="#">3</a>
+             </li>
+             <li>
+               <a href="#">Следующая</a>
+             </li>
+           </ul>
          </div>
        </div>
-       <div class="btn-pages">
-         <a class="btn" href="#">1</a>
-         <a class="btn" href="#">2</a>
-         <a class="btn" href="#">3</a>
-         <a class="btn" href="#">Следующая</a>
-       </div>
-     </div>
-   </main>
+    </main>
    <footer class="main-footer">
      <div class="map">
        <img src="http://placehold.it/150x100" alt="map">
