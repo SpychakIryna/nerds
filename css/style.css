@@ -3,17 +3,17 @@ body {
   line-height: 22px;
   color: 000000;
   font-weight: medium;
-  font-family: Roboto;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 
-h1 {
+.index h1 {
   font-size: 36px;
   line-height: 36px;
 }
 
 
-h1 {
+.catalog h1 {
   font-size: 40px;
   line-height: auto;
 }
