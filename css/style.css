@@ -1,9 +1,12 @@
 body {
   font-size: 16px;
   line-height: 22px;
-  color: 000000;
+  color: #000000;
   font-weight: medium;
   font-family: "Roboto", "Arial", sans-serif;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -16,4 +19,181 @@ body {
 .catalog h1 {
   font-size: 40px;
   line-height: auto;
+}
+
+b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+    padding-top:20px;
+    background:#eeeeee;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+  background:#ebd6fa;
+}
+
+.index-logo {
+    float:left;
+    min-height:80px;
+    width:160px;
+    margin-right:20px;
+    background:#e6f8b4;
+}
+
+.main-navigation {
+    float:left;
+    min-height:80px;
+    width:450px;
+    margin-right:20px;
+    padding-left:140px;
+    background:#e6f8b4;
+}
+
+.main-navigation li{
+  display: inline;
+  padding-right:30px;
+
+}
+
+.cart {
+    float:right;
+    width:110px;
+    min-height:80px;
+    background:#e6f8b4;
+}
+
+.slider {
+    float:left;
+    width:900px;
+    height:260px;
+    padding:45px 0;
+    background:#53fae8;
+}
+
+.left-slider {
+    float:left;
+    width:380px;
+    height:250px;
+    background:#e6f8b4;
+}
+.right-slider {
+    float:right;
+    width:380px;
+    height:250px;
+    background:#e6f8b4;
+}
+
+.advanteges{
+    width:900px;
+    height:320px;
+    padding:70px 0;
+    background:#53fae8;
+}
+
+.advanteges .sites {
+    float:left;
+    width:250px;
+    height:320px;
+    margin-right:60px;
+    background:#e6f8b4;
+}
+
+.advanteges .apps {
+    float:left;
+    width:250px;
+    height:320px;
+    margin-right:60px;
+    background:#e6f8b4;
+}
+.advanteges .presentations {
+    float:right;
+    width:250px;
+    height:320px;
+    background:#e6f8b4;
+}
+
+.features {
+    width:900px;
+    height:360px;
+    padding:50px 0;
+    background:#53fae8;
+}
+
+.feature-left {
+    float:left;
+    width:600px;
+    height:360px;
+    margin-right:50px;
+    background:#e6f8b4;
+}
+
+.feature-right {
+    float:right;
+    width:250px;
+    height:360px;
+    background:#e6f8b4;
+}
+
+.partners-1-3 {
+    width:900px;
+    height:100px;
+    padding:35px 0;
+    background:#53fae8;
+}
+
+.partner-1 {
+    float:left;
+    width:260px;
+    height:100px;
+    margin-right:60px;
+    background:#e6f8b4;
+}
+
+.partner-2 {
+    float:left;
+    width:260px;
+    height:100px;
+    margin-right:60px;
+    background:#e6f8b4;
+}
+
+.partner-3 {
+    float:right;
+    width:260px;
+    height:100px;
+    background:#e6f8b4;
+}
+
+.map {
+
+}
+
+.contact {
+
+}
+
+.footer-social {
+    float:left;
+    width:300px;
+    height:100px;
+    margin-right:20px;
+    background:#e6f8b4;
+}
+.footer-sale {
+    float:right;
+    width:570px;
+    height:100px;
+    background:#e6f8b4;
 }
