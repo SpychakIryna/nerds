@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
   </head>
@@ -9,7 +10,7 @@
      <div class="container clearfix">
        <div class="index-logo">
          <a href="#">
-           <img src="img/index-logo.png" alt="logo">
+           <img src="img/index_logo.png" width="139" height="56" alt="logo">
          </a>
        </div>
        <nav class="main-navigation">
@@ -29,7 +30,7 @@
          </ul>
        </nav>
        <div class="cart">
-         <img src="" alt="">
+         <img src="" alt="cart">
          <a href="#">Корзина</a>
        </div>
        <div class="title">
@@ -62,19 +63,24 @@
              </label>
            <p>ОСОБЕННОСТИ:</p>
              <label>
-               Слайдер <input type="checkbox" name="slider" checked>
+               <input type="checkbox" name="slider" checked>
+               Слайдер
              </label>
              <label>
-               Блок преимуществ <input type="checkbox" name="advanteges">
+               <input type="checkbox" name="advanteges">
+               Блок преимуществ
              </label>
              <label>
-               Новости <input type="checkbox" name="news" checked>
+               <input type="checkbox" name="news" checked>
+               Новости
              </label>
              <label>
-               Галерея <input type="checkbox" name="gallery">
+               <input type="checkbox" name="gallery">
+               Галерея
              </label>
              <label>
-               Корзина <input type="checkbox" name="cart">
+               <input type="checkbox" name="cart">
+               Корзина
              </label>
              <input type="submit" value="Показать">
            </form>
@@ -92,16 +98,8 @@
                <a href="#">ПО ФУНКЦИОНАЛУ</a>
              </li>
            </ul>
-           <div class="card">
-             <img src="http://placehold.it/150x100" alt="">
-             <div class="hover">
-               <a href="#">AVIATOR</a>
-               <p>Текст</p>
-               <a class="btn" href="#">Стоимость.</a>
-             </div>
-           </div>
-           <div class="card">
-             <img src="http://placehold.it/150x100" alt="">
+           <div class="card opened">
+             <img src="img/card_2.jpg"  width="240" height="240" alt="sunset">
              <div class="hover">
                <a chref="#">SUNSET</a>
                <p>Интернет-магазин с личным кабинетом</p>
@@ -109,15 +107,15 @@
              </div>
            </div>
            <div class="card">
-             <img src="http://placehold.it/150x100" alt="">
+             <img src="img/card_1.jpg" width="240" height="240" alt="aviator">
              <div class="hover">
-               <a href="#">FORTE</a>
+               <a href="#">AVIATOR</a>
                <p>Текст</p>
                <a class="btn" href="#">Стоимость.</a>
              </div>
            </div>
            <div class="card">
-             <img src="http://placehold.it/150x100" alt="">
+             <img src="img/card_4.jpg"  width="240" height="240" alt="organic">
              <div class="hover">
                <a href="#">MODERN ORGANIC THAI</a>
                <p>Текст</p>
@@ -125,17 +123,25 @@
              </div>
            </div>
            <div class="card">
-             <img src="http://placehold.it/150x100" alt="">
+             <img src="img/card_3.jpg"  width="240" height="240"  alt="forte">
              <div class="hover">
-               <a href="#">AVENUE</a>
+               <a href="#">FORTE</a>
                <p>Текст</p>
                <a class="btn" href="#">Стоимость.</a>
              </div>
            </div>
            <div class="card">
-             <img src="http://placehold.it/150x100" alt="">
+             <img src="img/card_6.jpg" alt="">
              <div class="hover">
                <a href="#">DOVETAIL</a>
+               <p>Текст</p>
+               <a class="btn" href="#">Стоимость.</a>
+             </div>
+           </div>
+           <div class="card">
+             <img src="img/card_5.jpg"  width="240" height="240" alt="avenue">
+             <div class="hover">
+               <a href="#">AVENUE</a>
                <p>Текст</p>
                <a class="btn" href="#">Стоимость.</a>
              </div>
@@ -158,16 +164,15 @@
     </main>
    <footer class="main-footer">
      <div class="map">
-       <img src="http://placehold.it/150x100" alt="map">
-       <img src="img/index-logo.png" alt="logo">
+       <img src="img/map.jpg" width="1199" height="416" alt="map">
+       <img src="img/marker.png" width="231" height="190" alt="map_marker">
        <div class="contact">
-         NERDS DESIGN STUDIO<br>
+         <p><span>NERDS DESIGN STUDIO</span>
          191186, Санкт-Петербург,<br>
-         ул. Б. Конюшенная, д. 19/8<br>
-         <br>
-         тел. +7 (812) 275-75-75<br>
+         ул. Б. Конюшенная, д. 19/8</p>
+         <p>тел. +7 (812) 275-75-75</p><br>
          <a class="btn" href="#">НАПИШИТЕ НАМ</a>
-        </div>
+       </div>
       </div>
        <div class="container clearfix">
          <section class="footer-social">

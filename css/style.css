@@ -18,7 +18,7 @@ body {
 
 .catalog h1 {
   font-size: 40px;
-  line-height: auto;
+  line-height: normal;
 }
 
 .title {
@@ -43,6 +43,12 @@ b {
 .main-header {
     padding-top:20px;
     background:#eeeeee;
+}
+
+a {
+  color:#000000;
+  font-weight:bold;
+  text-decoration:none;
 }
 
 .container {
@@ -196,19 +202,31 @@ b {
     margin-bottom:50px;
 }
 
+.hover {
+  display:none;
+  width:200px;
+  height:200px;
+  background:#ffffff;
+}
+
+.opened .hover {
+  display:block;
+}
+
 .pages {
     float:left;
     min-width:300px;
     height:50px;
 }
 
-
 .map {
 
 }
 
 .contact {
-
+  width:250px;
+  height:240px;
+  background:#ffffff;
 }
 
 .footer-social {
