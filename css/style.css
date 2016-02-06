@@ -4,7 +4,6 @@ body {
   color: #000000;
   font-weight: medium;
   font-family: "Roboto", "Arial", sans-serif;
-  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -104,7 +103,6 @@ a {
 
 .advanteges{
     width:900px;
-    height:320px;
     padding:70px 0;
 }
 
@@ -130,7 +128,6 @@ a {
 
 .features {
     width:900px;
-    height:360px;
     padding:50px 0;
 }
 
@@ -149,7 +146,6 @@ a {
 
 .partners-1-3 {
     width:900px;
-    height:100px;
     padding:35px 0;
 }
 
@@ -190,7 +186,7 @@ a {
     height:1130px;
 }
 
-.cards-layout li {
+.sorting li {
     display:inline;
 }
 
@@ -202,7 +198,7 @@ a {
     margin-bottom:50px;
 }
 
-.hover {
+/*.hover {
   display:none;
   width:200px;
   height:200px;
@@ -211,12 +207,16 @@ a {
 
 .opened .hover {
   display:block;
-}
+}*/
 
 .pages {
     float:left;
     min-width:300px;
     height:50px;
+}
+
+.pages li {
+  display:inline;
 }
 
 .map {
