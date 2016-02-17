@@ -40,54 +40,45 @@
      </div>
    </header>
    <main class="container clearfix">
-       <div class="forms">
-         <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-           <p>СТОИМОСТЬ:</p>
-           <div class="price-controls">
-             от <input class="min-price" type="text" value="0">
-             до <input class="max-price" type="text" value="15 000">
+         <form action="https://echo.htmlacademy.ru" method="post">
+           <div class="range-filter">
+           <h2>СТОИМОСТЬ:</h2>
+           <div class="range-controls">
+             <div class="scale">
+               <div class="bar"></div>
+             </div>
+             <div class="toggle toggle-min"></div>
+             <div class="toggle toggle-max"></div>
            </div>
-           <div class="range-filter"></div>
-           <p>СЕТКА:</p>
-             <label>
-                <input type="radio" name="question" value="adaptive" checked>
-                  Адаптивная
-             </label>
-             <label>
-                <input type="radio" name="question" value="fixed">
-                  Фиксированная
-             </label>
-             <label>
-                <input type="radio" name="question" value="rubbery">
-                Резиновая
-             </label>
-           <p>ОСОБЕННОСТИ:</p>
-             <label>
-               <input type="checkbox" name="slider" checked>
-               Слайдер
-             </label>
-             <label>
-               <input type="checkbox" name="advanteges">
-               Блок преимуществ
-             </label>
-             <label>
-               <input type="checkbox" name="news" checked>
-               Новости
-             </label>
-             <label>
-               <input type="checkbox" name="gallery">
-               Галерея
-             </label>
-             <label>
-               <input type="checkbox" name="cart">
-               Корзина
-             </label>
-             <input type="submit" value="Показать">
+           <div class="price-controls">
+             <label class="min-price">от <input class="min-price" type="text" value="0"></label>
+             <label class="max-price">до <input class="max-price" type="text" value="15 000"></label>
+           </div>
+           </div>
+           <h2 class="form-title">СЕТКА:</h2>
+             <input type="radio" id="point-1" name="question" value="adaptive" checked>
+             <label for="point-1">Адаптивная</label>
+             <input type="radio" id="point-2" name="question" value="fixed">
+             <label for="point-2">Фиксированная</label>
+             <input type="radio" id="point-3" name="question" value="rubbery">
+             <label for="point-3">Резиновая</label>
+           <h2 class="form-title">ОСОБЕННОСТИ:</h2>
+             <input type="checkbox" id="point-4" name="slider" checked>
+               <label for="point-4">Слайдер</label>
+               <input type="checkbox" id="point-5" name="advanteges">
+               <label for="point-5">Блок преимуществ</label>
+               <input type="checkbox" id="point-6" name="news" checked>
+               <label for="point-6">Новости</label>
+               <input type="checkbox" id="point-7" name="gallery">
+               <label for="point-7">Галерея</label>
+               <input type="checkbox" id="point-8" ame="cart">
+               <label for="point-8">Корзина</label>
+             <input class="btn" type="submit" value="Показать">
            </form>
-         </div>
          <div class="cards-layout">
+           <div class="sorting">
            <span>СОРТИРОВАТЬ:</span>
-             <ul class="sorting">
+             <ul>
                <li>
                  <a href="#">ПО ЦЕНЕ</a>
                </li>
@@ -98,57 +89,72 @@
                   <a href="#">ПО ФУНКЦИОНАЛУ</a>
                </li>
              </ul>
+             <span class="icon icon-down-dir"></span>
+             <span class="icon icon-up-dir"></span>
+          </div>
            <div class="card opened">
              <img src="img/card_2.jpg"  width="240" height="240" alt="sunset">
-             <div class="hover">
-               <a chref="#">SUNSET</a>
-               <p>Интернет-магазин с личным кабинетом</p>
-               <a class="btn" href="#">10000 Р.</a>
+             <div class="description">
+               <div class="description-content">
+                 <a class="card-name" href="#">SUNSET</a>
+                 <p>Интернет-магазин с личным кабинетом</p>
+                 <a class="btn" href="#">10000 Р.</a>
+              </div>
              </div>
            </div>
            <div class="card">
              <img src="img/card_1.jpg" width="240" height="240" alt="aviator">
-             <div class="hover">
-               <a href="#">AVIATOR</a>
-               <p>Текст</p>
-               <a class="btn" href="#">Стоимость.</a>
+             <div class="description">
+               <div class="description-content">
+                 <a class="card-name" href="#">AVIATOR</a>
+                 <p>Интернет-магазин с личным кабинетом</p>
+                 <a class="btn" href="#">10000 Р.</a>
+               </div>
              </div>
            </div>
            <div class="card">
              <img src="img/card_4.jpg"  width="240" height="240" alt="organic">
-             <div class="hover">
-               <a href="#">MODERN ORGANIC THAI</a>
-               <p>Текст</p>
-               <a class="btn" href="#">Стоимость.</a>
-             </div>
+             <div class="description">
+                 <div class="description-content">
+                   <a class="card-name" href="#">MODERN ORGANIC THAI</a>
+                   <p>Интернет-магазин с личным кабинетом</p>
+                   <a class="btn" href="#">10000 Р.</a>
+                 </div>
+               </div>
            </div>
            <div class="card">
              <img src="img/card_3.jpg"  width="240" height="240"  alt="forte">
-             <div class="hover">
-               <a href="#">FORTE</a>
-               <p>Текст</p>
-               <a class="btn" href="#">Стоимость.</a>
-             </div>
+             <div class="description">
+                 <div class="description-content">
+                   <a class="card-name" href="#">FORTE</a>
+                   <p>Интернет-магазин с личным кабинетом</p>
+                   <a class="btn" href="#">10000 Р.</a>
+                  </div>
+              </div>
            </div>
            <div class="card">
              <img src="img/card_6.jpg" alt="">
-             <div class="hover">
-               <a href="#">DOVETAIL</a>
-               <p>Текст</p>
-               <a class="btn" href="#">Стоимость.</a>
+             <div class="description">
+               <div class="description-content">
+                 <a class="card-name" href="#">DOVETAIL</a>
+                 <p>Интернет-магазин с личным кабинетом</p>
+                 <a class="btn" href="#">10000 Р.</a>
+               </div>
              </div>
            </div>
            <div class="card">
              <img src="img/card_5.jpg"  width="240" height="240" alt="avenue">
-             <div class="hover">
-               <a href="#">AVENUE</a>
-               <p>Текст</p>
-               <a class="btn" href="#">Стоимость.</a>
+             <div class="description">
+               <div class="description-content">
+                 <a class="card-name" href="#">AVENUE</a>
+                 <p>Интернет-магазин с личным кабинетом</p>
+                 <a class="btn" href="#">10000 Р.</a>
+               </div>
              </div>
            </div>
-           <ul class="pages">
-             <li class="active">
-               1
+           <ul class="catalog-pages">
+             <li>
+               <span class="current">1</span>
              </li>
              <li>
                <a class="btn" href="#">2</a>
@@ -157,10 +163,10 @@
                <a class="btn" href="#">3</a>
              </li>
              <li>
-               <a class="btn" href="#">Следующая</a>
+               <a class="btn next" href="#">Следующая</a>
              </li>
            </ul>
-         </div>
+        </div>
     </main>
     <footer class="main-footer">
      <div class="container clearfix">
