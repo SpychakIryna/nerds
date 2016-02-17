@@ -244,7 +244,6 @@ body {
   margin:0;
 }
 
-
 .btn {
   float:left;
   display: inline-block;
@@ -543,6 +542,7 @@ main .features {
   width:260px;
   min-height:90px;
   padding:0;
+  padding-top:70px;
   margin:0;
   margin-right:45px;
 }
@@ -552,17 +552,17 @@ main .features {
 }
 
 .partners .partner-1 {
-  background: url("../img/partner_1.png") no-repeat 0 0;
+  background: url("../img/partner_1.png") no-repeat 0 center;
   opacity:0.2;
 }
 
 .partners .partner-2 {
-  background: url("../img/partner_2.png") no-repeat 0 0;
+  background: url("../img/partner_2.png") no-repeat 0 center;
   opacity:0.2;
 }
 
 .partners .partner-3 {
-  background: url("../img/partner_3.png") no-repeat 0 0;
+  background: url("../img/partner_3.png") no-repeat 0 center;
   opacity:0.2;
 }
 
@@ -1001,16 +1001,15 @@ form .btn:active {
 }
 
 .main-footer .map {
-  position:relative;
-  z-index:1;
+
   height:415px;
-  width:1200px;
+  width:100%;
   padding:0;
   margin:0;
-  background: url("../img/map.jpg") no-repeat 0 0;
+  background: url("../img/map.jpg") no-repeat center 0;
 }
 
-.map .marker {
+.marker {
   position:absolute;
   z-index:3;
   width:190px;
@@ -1020,7 +1019,7 @@ form .btn:active {
   background: url("../img/marker.png") no-repeat 0 0;
 }
 
-.map .contact {
+.contact {
   position:absolute;
   z-index:2;
   width:250px;
