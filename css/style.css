@@ -879,7 +879,7 @@ form .btn:active {
   height:240px;
 }
 
-.card .description {
+.card .hover {
   display:block;
   position:absolute;
   z-index:1;
@@ -890,13 +890,13 @@ form .btn:active {
   background-color:#ffffff;
 }
 
-.description-content {
+.hover .description {
   text-align:center;
   padding:20px;
   padding-top:30px;
 }
 
-.description .card-name {
+.hover .card-name {
   font-size:18px;
   line-height:18px;
   text-transform:uppercase;
@@ -904,25 +904,25 @@ form .btn:active {
   text-decoration:none;
 }
 
-.description-content p {
+.description p {
   font-size:14px;
   line-height:18px;
   color:#363f43;
   margin-top:15px;
 }
 
-.description-content .btn {
+.description .btn {
   width:60px;
   color:#ffffff;
   background-color:#fb565a;
   margin-bottom:30px;
 }
 
-.description .btn:hover {
+.hover .btn:hover {
   background:#d6494d;
 }
 
-.description .btn:active {
+.hover .btn:active {
   background:#b63538;
   box-shadow:inset 0 3px 0 0 #9b2d30;
 }
@@ -1001,7 +1001,6 @@ form .btn:active {
 }
 
 .main-footer .map {
-
   height:415px;
   width:100%;
   padding:0;
@@ -1030,14 +1029,13 @@ form .btn:active {
 }
 
 .contact .contact-content {
-   padding: 25px 20px;
+  padding: 25px 20px;
  }
 
 .contact-content .btn {
   width:120px;
   background-color:#fb565a;
   margin:0 auto;
-
 }
 
 .contact-content .btn:hover {
@@ -1106,11 +1104,11 @@ form .btn:active {
 
 .icon-social .social-btn-vk {
   background-position: 7px -305px;
-  }
+}
 
 .icon-social .social-btn-fb {
   background-position:13px -225px;
-  }
+}
 
 .icon-social .social-btn-inst {
   background-position:10px -265px;
@@ -1138,4 +1136,142 @@ form .btn:active {
   padding:0;
   margin:0;
   margin-top:10px;
+}
+
+.modal-block {
+  position:absolute;
+  z-index:100;
+  left:50%;
+  bottom:-250px;
+  width:470px;
+  margin-left:-315px;
+  padding:50px 85px;
+  color:#000000;
+  background-color:#ffffff;
+  box-shadow:0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-block-close {
+  position:absolute;
+  top:6px;
+  right:6px;
+  width:41px;
+  height:41px;
+  font-size:0;
+  background-color:#fb565a;
+  border-radius:50%;
+  border:0;
+  outline:0;
+  cursor:pointer;
+}
+
+.modal-block-close::before,
+.modal-block-close::after {
+  content:"";
+  position:absolute;
+  top:8px;
+  left:18px;
+  width:4px;
+  height:25px;
+  background-color:#ffffff;
+  border-radius:1px;
+}
+
+.modal-block-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-block-close::after {
+  transform: rotate(-45deg);
+}
+
+.message-form .btn:hover {
+  background:#d6494d;
+}
+
+.message-form .btn:active {
+  background:#b63538;
+  box-shadow:inset 0 3px 0 0 #9b2d30;
+}
+
+.message-form p {
+  font-size:16px;
+  font-weight:bold;
+  line-height:18px;
+  color:#000000;
+  margin:0;
+  margin-bottom:10px;
+}
+
+.message-form input[type="text"] {
+  width:190px;
+  margin:0;
+  margin-bottom:20px;
+  margin-top:20px;
+  margin-right:20px;
+  padding:10px 13px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform:uppercase;
+  background-color:#ffffff;
+  border: 2px solid #d7dcde;
+  border-radius:3px;
+  outline:none;
+}
+
+.message-form:nth-child(even) {
+  margin-right:0;
+}
+
+.message-form input:hover {
+  border-color:#a2a9ac;
+}
+
+.message-form input:focus {
+  border-color:#56bffb;
+}
+
+.message-form .btn {
+  width:460px;
+  color:#ffffff;
+  font-weight:500;
+  background-color:#fb565a;
+  margin:0;
+}
+
+.message-form .btn:hover {
+  background:#d6494d;
+}
+
+.message-form .btn:active {
+  background:#b63538;
+  box-shadow:inset 0 3px 0 0 #9b2d30;
+}
+
+.message-form textarea {
+  width:430px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #c1c1c1;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  padding:10px 13px;
+  margin-bottom:45px;
+  text-transform:uppercase;
+  background-color:#ffffff;
+  border: 2px solid #d7dcde;
+  border-radius:3px;
+  outline:none;
+  resize: none;
+}
+
+.message-form textarea:hover {
+  border-color:#a2a9ac;
+}
+
+.message-form textarea:focus {
+  border-color:#56bffb;
 }
