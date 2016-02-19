@@ -4,172 +4,175 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-     <div class="container clearfix">
-       <div class="index-logo">
-         <a href="index.html">
-           <img src="img/index_logo.png" width="139" height="56" alt="logo">
-         </a>
-       </div>
-       <nav class="main-navigation">
-         <ul>
-           <li>
-             <a href="#">Студия</a>
-           </li>
-           <li>
-             <a href="#">Клиенты</a>
-           </li>
-           <li class="current">
-             <a href="catalog.html">Магазин</a>
-           </li>
-           <li>
-             <a href="#">Контакты</a>
-           </li>
-           <li>
-             <a class="cart" href="#">Корзина</a>
-           </li>
-         </ul>
-       </nav>
-       <div class="catalog-title">
-         <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br>
-           ГОТОВЫХ МАКЕТОВ</h1>
-       </div>
-     </div>
-   </header>
-   <main class="container clearfix">
-         <form action="https://echo.htmlacademy.ru" method="post">
-           <div class="range-filter">
-           <h2>СТОИМОСТЬ:</h2>
-           <div class="range-controls">
-             <div class="scale">
-               <div class="bar"></div>
-             </div>
-             <div class="toggle toggle-min"></div>
-             <div class="toggle toggle-max"></div>
-           </div>
-           <div class="price-controls">
-             <label class="min-price">от <input class="min-price" type="text" value="0"></label>
-             <label class="max-price">до <input class="max-price" type="text" value="15 000"></label>
-           </div>
-           </div>
-           <h2 class="form-title">СЕТКА:</h2>
-             <input type="radio" id="point-1" name="question" value="adaptive" checked>
-             <label for="point-1">Адаптивная</label>
-             <input type="radio" id="point-2" name="question" value="fixed">
-             <label for="point-2">Фиксированная</label>
-             <input type="radio" id="point-3" name="question" value="rubbery">
-             <label for="point-3">Резиновая</label>
-           <h2 class="form-title">ОСОБЕННОСТИ:</h2>
-             <input type="checkbox" id="point-4" name="slider" checked>
-               <label for="point-4">Слайдер</label>
-               <input type="checkbox" id="point-5" name="advanteges">
-               <label for="point-5">Блок преимуществ</label>
-               <input type="checkbox" id="point-6" name="news" checked>
-               <label for="point-6">Новости</label>
-               <input type="checkbox" id="point-7" name="gallery">
-               <label for="point-7">Галерея</label>
-               <input type="checkbox" id="point-8" ame="cart">
-               <label for="point-8">Корзина</label>
-             <input class="btn" type="submit" value="Показать">
-           </form>
-         <div class="cards-layout">
-           <div class="sorting">
-           <span>СОРТИРОВАТЬ:</span>
-             <ul>
-               <li>
-                 <a href="#">ПО ЦЕНЕ</a>
-               </li>
-               <li>
-                 <a href="#">ПО ТИПУ</a>
-               </li>
-               <li>
-                  <a href="#">ПО ФУНКЦИОНАЛУ</a>
-               </li>
-             </ul>
-             <span class="icon icon-down-dir"></span>
-             <span class="icon icon-up-dir"></span>
-          </div>
-           <div class="card opened">
-             <img src="img/card_2.jpg"  width="240" height="240" alt="sunset">
-             <div class="hover">
-               <div class="description">
-                 <a class="card-name" href="#">SUNSET</a>
-                 <p>Интернет-магазин с личным кабинетом</p>
-                 <a class="btn" href="#">10000 Р.</a>
-              </div>
-             </div>
-           </div>
-           <div class="card">
-             <img src="img/card_1.jpg" width="240" height="240" alt="aviator">
-             <div class="hover">
-               <div class="description">
-                 <a class="card-name" href="#">AVIATOR</a>
-                 <p>Интернет-магазин с личным кабинетом</p>
-                 <a class="btn" href="#">10000 Р.</a>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img src="img/card_4.jpg"  width="240" height="240" alt="organic">
-             <div class="hover">
-                 <div class="description">
-                   <a class="card-name" href="#">MODERN ORGANIC THAI</a>
-                   <p>Интернет-магазин </p>
-                   <a class="btn" href="#">10000 Р.</a>
-                 </div>
-               </div>
-           </div>
-           <div class="card">
-             <img src="img/card_3.jpg"  width="240" height="240"  alt="forte">
-             <div class="hover">
-                 <div class="description">
-                   <a class="card-name" href="#">FORTE</a>
-                   <p>Интернет-магазин с личным кабинетом</p>
-                   <a class="btn" href="#">10000 Р.</a>
-                  </div>
-              </div>
-           </div>
-           <div class="card">
-             <img src="img/card_6.jpg" alt="">
-             <div class="hover">
-               <div class="description">
-                 <a class="card-name" href="#">DOVETAIL</a>
-                 <p>Интернет-магазин с личным кабинетом</p>
-                 <a class="btn" href="#">10000 Р.</a>
-               </div>
-             </div>
-           </div>
-           <div class="card">
-             <img src="img/card_5.jpg"  width="240" height="240" alt="avenue">
-             <div class="hover">
-               <div class="description">
-                 <a class="card-name" href="#">AVENUE</a>
-                 <p>Интернет-магазин с личным кабинетом</p>
-                 <a class="btn" href="#">10000 Р.</a>
-               </div>
-             </div>
-           </div>
-           <ul class="catalog-pages">
-             <li>
-               <span class="current">1</span>
-             </li>
-             <li>
-               <a class="btn" href="#">2</a>
-             </li>
-             <li>
-               <a class="btn" href="#">3</a>
-             </li>
-             <li>
-               <a class="btn next" href="#">Следующая</a>
-             </li>
-           </ul>
+      <div class="container clearfix">
+        <div class="index-logo">
+          <a href="index.html">
+            <img src="img/index_logo.png" width="139" height="56" alt="logo">
+          </a>
         </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="current">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a class="cart" href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="catalog-title">
+          <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН<br>
+              ГОТОВЫХ МАКЕТОВ</h1>
+        </div>
+      </div>
+    </header>
+    <main class="container clearfix">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="range-filter">
+          <h2>СТОИМОСТЬ:</h2>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input class="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input class="max-price" type="text" value="15 000"></label>
+          </div>
+        </div>
+        <h2 class="form-title">СЕТКА:</h2>
+        <input type="radio" id="point-1" name="question" value="adaptive" checked>
+        <label for="point-1">Адаптивная</label>
+        <input type="radio" id="point-2" name="question" value="fixed">
+        <label for="point-2">Фиксированная</label>
+        <input type="radio" id="point-3" name="question" value="rubbery">
+        <label for="point-3">Резиновая</label>
+        <h2 class="form-title">ОСОБЕННОСТИ:</h2>
+        <input type="checkbox" id="point-4" name="slider" checked>
+        <label for="point-4">Слайдер</label>
+        <input type="checkbox" id="point-5" name="advanteges">
+        <label for="point-5">Блок преимуществ</label>
+        <input type="checkbox" id="point-6" name="news" checked>
+        <label for="point-6">Новости</label>
+        <input type="checkbox" id="point-7" name="gallery">
+        <label for="point-7">Галерея</label>
+        <input type="checkbox" id="point-8" name="cart">
+        <label for="point-8">Корзина</label>
+        <input class="btn" type="submit" value="Показать">
+      </form>
+      <div class="cards-layout">
+        <div class="sorting">
+          <span>СОРТИРОВАТЬ:</span>
+          <ul>
+            <li>
+              <a href="#">ПО ЦЕНЕ</a>
+            </li>
+            <li>
+              <a href="#">ПО ТИПУ</a>
+            </li>
+            <li>
+              <a href="#">ПО ФУНКЦИОНАЛУ</a>
+            </li>
+          </ul>
+          <span class="icon icon-down-dir"></span>
+          <span class="icon icon-up-dir"></span>
+        </div>
+        <div class="card opened">
+          <img src="img/card_2.jpg" width="240" height="240" alt="sunset">
+          <div class="hover">
+            <div class="description">
+              <a class="card-name" href="#">SUNSET</a>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/card_1.jpg" width="240" height="240" alt="aviator">
+          <div class="hover">
+            <div class="description">
+              <a class="card-name" href="#">AVIATOR</a>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/card_4.jpg" width="240" height="240" alt="organic">
+          <div class="hover">
+            <div class="description">
+              <a class="card-name" href="#">MODERN ORGANIC THAI</a>
+              <p>Интернет-магазин </p>
+              <a class="btn" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/card_3.jpg" width="240" height="240"  alt="forte">
+          <div class="hover">
+            <div class="description">
+              <a class="card-name" href="#">FORTE</a>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/card_6.jpg" width="239" height="240" alt="DOVETAIL">
+          <div class="hover">
+            <div class="description">
+              <a class="card-name" href="#">DOVETAIL</a>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/card_5.jpg" width="240" height="240" alt="avenue">
+          <div class="hover">
+            <div class="description">
+              <a class="card-name" href="#">AVENUE</a>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn" href="#">10000 Р.</a>
+            </div>
+          </div>
+        </div>
+        <ul class="catalog-pages">
+          <li>
+            <span class="current">1</span>
+          </li>
+          <li>
+            <a class="btn" href="#">2</a>
+          </li>
+          <li>
+            <a class="btn" href="#">3</a>
+          </li>
+          <li>
+            <a class="btn next" href="#">Следующая</a>
+          </li>
+        </ul>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="map">
+      </div>
+      <div class="container clearfix">
         <div class="marker">
         </div>
         <div class="contact">
@@ -177,26 +180,41 @@
             <span>NERDS DESIGN STUDIO</span>
             <p>191186, Санкт-Петербург,<br>
               ул. Б. Конюшенная, д. 19/8</p>
-              <p>тел. +7 (812) 275-75-75</p>
-              <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="btn" href="#">НАПИШИТЕ НАМ</a>
+          </div>
+        </div>
+        <div class="footer-social clearfix">
+          <div class="icon-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-sale">
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальный сетей.</p>
           </div>
         </div>
       </div>
-     <div class="container clearfix">
-      <div class="footer-social clearfix">
-         <div class="icon-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </div>
-        <div class="footer-sale">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальный сетей.</p>
-        </div>
-    </div>
-    </div>
     </footer>
+    <div class="modal-block">
+      <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="message-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <div class="left-field">
+          <p>Ваше имя:</p>
+          <input type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" required>
+        </div>
+        <div class="right-field">
+          <p>Ваш e-mail:</p>
+          <input type="text" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
+        </div>
+        <p>Текст письма:</p>
+        <textarea name="message" id="message-field" rows="5" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+        <button class="btn" type="submit">ОТПРАВИТЬ</button>
+      </form>
+    </div>
     <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-      <script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/modal-block.js"></script>
   </body>
 </html>
