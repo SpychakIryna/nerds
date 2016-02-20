@@ -1007,7 +1007,6 @@ form .btn:active {
 
 .main-footer .map {
   height:415px;
-  width:100%;
   padding:0;
   margin:0;
   background: url("../img/map.jpg") no-repeat center 0;
@@ -1164,7 +1163,7 @@ form .btn:active {
   display: none;
   z-index:100;
   left:50%;
-  bottom:-250px;
+  top:250px;
   width:470px;
   margin-left:-315px;
   padding:50px 85px;

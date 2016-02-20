@@ -1,4 +1,3 @@
-<script>
  var link = document.querySelector(".write-us");
  var popup = document.querySelector(".modal-block");
  var close = popup.querySelector(".modal-block-close");
@@ -30,4 +29,3 @@
      }
    }
  });
-</script>

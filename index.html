@@ -128,6 +128,7 @@
     </main>
     <footer class="main-footer">
       <div class="map">
+        <div id="yandex-map"></div>
       </div>
       <div class="container clearfix">
         <div class="marker">
@@ -170,40 +171,8 @@
         <button class="btn" type="submit">ОТПРАВИТЬ</button>
       </form>
     </div>
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
     <script src="js/jquery.js"></script>
-    <script>
-     var link = document.querySelector(".write-us");
-     var popup = document.querySelector(".modal-block");
-     var close = popup.querySelector(".modal-block-close");
-     var form = popup.querySelector("form");
-     var user_name = popup.querySelector("[name=user-name]");
-     var user_mail = popup.querySelector("[name=user-mail]");
-
-     link.addEventListener("click", function(event) {
-       event.preventDefault();
-       popup.classList.add("modal-block-show");
-       user_name.focus();
-     });
-
-     close.addEventListener("click", function(event) {
-       event.preventDefault();
-       popup.classList.remove("modal-block-show");
-     });
-
-       form.addEventListener("submit", function(event) {
-               if (!user_name.value || !user_mail.value) {
-         event.preventDefault();
-       }
-     });
-
-     window.addEventListener("keydown", function(event) {
-       if (event.keyCode === 27) {
-         if (popup.classList.contains("modal-block-show")) {
-           popup.classList.remove("modal-block-show");
-         }
-       }
-     });
-    </script>
+    <script src="js/modal-block.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=dAQXqFmCwT0GYQwKwbgamAkv2hI1adhP&width=100%&height=415id=yandex-map&lang=ru_UA&sourceType=constructor"></script>
   </body>
 </html>
