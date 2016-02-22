@@ -5,16 +5,14 @@
     <title>HTML Academy: Нёрдс</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <div class="index-logo">
-          <a href="#">
+        <a class="index-logo" href="#">
             <img src="img/index_logo.png" width="139" height="56" alt="logo">
-          </a>
-        </div>
+        </a>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -53,7 +51,7 @@
             </div>
             <div class="slide">
               <div class="slide-text">
-                <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+                <div class="slide-title">Любите ли вы математику, как любим ее мы?</div>
                 <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
                 <a class="btn" href="#">Узнать больше</a>
               </div>
@@ -89,7 +87,7 @@
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn" href="#">ЗАКАЗАТЬ</a>
         </div>
-      </div><hr>
+      </div>
       <div class="features clearfix">
         <div class="feature-left">
           <div class="feature-title">
@@ -119,12 +117,12 @@
             </ul>
           </div>
         </div>
-      </div><hr>
+      </div>
       <div class="partners">
         <a class="partner partner-1" href="#"></a>
         <a class="partner partner-2" href="#"></a>
         <a class="partner partner-3" href="#"></a>
-      </div><hr>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="map">
@@ -159,19 +157,18 @@
       <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
       <form class="message-form clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="left-field">
-          <p>Ваше имя:</p>
+          <label>Ваше имя:</label>
           <input type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" required>
         </div>
         <div class="right-field">
-          <p>Ваш e-mail:</p>
+          <label>Ваш e-mail:</label>
           <input type="text" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
         </div>
-          <p>Текст письма:</p>
+          <label>Текст письма:</label>
           <textarea name="message" id="message-field" rows="5" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
         <button class="btn" type="submit">ОТПРАВИТЬ</button>
       </form>
     </div>
-    <script src="js/jquery.js"></script>
     <script src="js/modal-block.min.js"></script>
   </body>
 </html>

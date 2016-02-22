@@ -5,16 +5,14 @@
     <title>HTML Academy: Нёрдс</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container clearfix">
-        <div class="index-logo">
-          <a href="index.html">
+        <a class="index-logo" href="index.html">
             <img src="img/index_logo.png" width="139" height="56" alt="logo">
-          </a>
-        </div>
+        </a>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -23,8 +21,8 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li class="current">
-              <a href="catalog.html">Магазин</a>
+            <li>
+              <a class="current" href="catalog.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -95,62 +93,50 @@
         </div>
         <div class="card opened">
           <img src="img/card_2.jpg" width="240" height="240" alt="sunset">
-          <div class="hover">
-            <div class="description">
-              <a class="card-name" href="#">SUNSET</a>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 Р.</a>
-            </div>
+          <div class="description">
+            <a class="card-name" href="#">SUNSET</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a class="btn" href="#">10000 Р.</a>
           </div>
         </div>
         <div class="card">
           <img src="img/card_1.jpg" width="240" height="240" alt="aviator">
-          <div class="hover">
-            <div class="description">
-              <a class="card-name" href="#">AVIATOR</a>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 Р.</a>
-            </div>
+          <div class="description">
+            <a class="card-name" href="#">AVIATOR</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a class="btn" href="#">10000 Р.</a>
           </div>
         </div>
         <div class="card">
           <img src="img/card_4.jpg" width="240" height="240" alt="organic">
-          <div class="hover">
-            <div class="description">
-              <a class="card-name" href="#">MODERN ORGANIC THAI</a>
-              <p>Интернет-магазин </p>
-              <a class="btn" href="#">10000 Р.</a>
-            </div>
+          <div class="description">
+            <a class="card-name" href="#">MODERN ORGANIC THAI</a>
+            <p>Интернет-магазин </p>
+            <a class="btn" href="#">10000 Р.</a>
           </div>
         </div>
         <div class="card">
           <img src="img/card_3.jpg" width="240" height="240"  alt="forte">
-          <div class="hover">
-            <div class="description">
-              <a class="card-name" href="#">FORTE</a>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 Р.</a>
-            </div>
+          <div class="description">
+            <a class="card-name" href="#">FORTE</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a class="btn" href="#">10000 Р.</a>
           </div>
         </div>
         <div class="card">
           <img src="img/card_6.jpg" width="239" height="240" alt="DOVETAIL">
-          <div class="hover">
-            <div class="description">
-              <a class="card-name" href="#">DOVETAIL</a>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 Р.</a>
-            </div>
+          <div class="description">
+            <a class="card-name" href="#">DOVETAIL</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a class="btn" href="#">10000 Р.</a>
           </div>
         </div>
         <div class="card">
           <img src="img/card_5.jpg" width="240" height="240" alt="avenue">
-          <div class="hover">
-            <div class="description">
-              <a class="card-name" href="#">AVENUE</a>
-              <p>Интернет-магазин с личным кабинетом</p>
-              <a class="btn" href="#">10000 Р.</a>
-            </div>
+          <div class="description">
+            <a class="card-name" href="#">AVENUE</a>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <a class="btn" href="#">10000 Р.</a>
           </div>
         </div>
         <ul class="catalog-pages">
@@ -202,19 +188,18 @@
       <button class="modal-block-close" type="button" title="Закрыть">Закрыть</button>
       <form class="message-form clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="left-field">
-          <p>Ваше имя:</p>
+          <label>Ваше имя:</label>
           <input type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" required>
         </div>
         <div class="right-field">
-          <p>Ваш e-mail:</p>
+          <label>Ваш e-mail:</label>
           <input type="text" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" required>
         </div>
-          <p>Текст письма:</p>
+          <label>Текст письма:</label>
           <textarea name="message" id="message-field" rows="5" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
         <button class="btn" type="submit">ОТПРАВИТЬ</button>
       </form>
     </div>
-    <script src="js/jquery.js"></script>
     <script src="js/modal-block.min.js"></script>
   </body>
 </html>

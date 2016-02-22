@@ -17,9 +17,9 @@
  });
 
    form.addEventListener("submit", function(event) {
-           if (!user_name.value || !user_mail.value) {
-     event.preventDefault();
-   }
+     if (!user_name.value || !user_mail.value) {
+       event.preventDefault();
+     }
  });
 
  window.addEventListener("keydown", function(event) {
