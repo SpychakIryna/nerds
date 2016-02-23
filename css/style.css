@@ -86,27 +86,27 @@ body {
 }
 
 .main-header .current {
-  color:#000000;
+  color: #000000;
   text-decoration: none;
   border-bottom: 2px solid #fb565a;
 }
 
-.main-header  .cart {
- float: right;
- position: relative;
- display: inline-block;
- padding: 0;
- margin-top: 56px;
- margin-bottom: 40px;
- margin-left: 60px;
- padding-left: 29px;
- font-size: 14px;
- line-height: 30px;
- font-weight: bold;
- text-transform: uppercase;
- vertical-align: top;
- color: #000000;
- text-decoration: none;
+.main-header .cart {
+  float: right;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin-top: 56px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  padding-left: 29px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: top;
+  color: #000000;
+  text-decoration: none;
 }
 
 .cart:hover {
@@ -142,7 +142,7 @@ body {
   float: left;
   position: relative;
   width: 880px;
-  height: 313px;
+  min-height: 313px;
   margin: 0 auto;
   padding: 0;
 }
@@ -184,10 +184,10 @@ body {
   display: block;
 }
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-    display: block;
+  display: block;
 }
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-    display: block;
+  display: block;
 }
 
 .slides {
@@ -209,11 +209,28 @@ body {
   margin: 0;
 }
 
+.first,
+.third {
+  width: 365px;
+}
+
+.second {
+  width: 465px;
+}
+
+.second p {
+  width: 446px;
+}
+
+.third p {
+  width: 470px;
+}
+
 .slide-title {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
-  max-width: 470px;
+  font-weight: 500;
+  min-width: 360px;
   color: #000000;
   margin: 0;
   margin-bottom: 20px;
@@ -285,7 +302,7 @@ body {
 .catalog-title {
   float: left;
   width: 880px;
-  height: 96px;
+  min-height: 96px;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -304,7 +321,7 @@ body {
 
 main .advanteges {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   padding: 80px 0;
   margin: 0;
   border-bottom: 2px solid #eeeeee;
@@ -384,14 +401,14 @@ main .advanteges {
   background: #d6ae2c;
 }
 
-.presentations  .btn:active {
+.presentations .btn:active {
   background: #c09b24;
   box-shadow: inset 0 3px 0 0 #a3841f;
 }
 
 main .features {
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -497,7 +514,7 @@ main .features {
 }
 
 .logo img {
-  display:block;
+  display: block;
   max-width: 100%;
   height: auto;
   padding: 0 30px;
@@ -539,42 +556,37 @@ main .features {
 main .partners {
   display: table;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 10px;
   padding: 37px 0;
   width: 100%;
-  height: 90px;
-}
-
-.partners a {
-  display: inline-block;
-  vertical-align: middle;
+  min-height: 90px;
 }
 
 .partner {
   display: table-cell;
   vertical-align: middle;
   width: calc(100% / 3);
+  padding-right: 25px;
 }
 
- .partner-1 {
+.partner a {
+  opacity: 0.2;
+}
+
+.partner:nth-of-type(1) {
   text-align: left;
-  background: url("../img/partner_1.png") no-repeat center;
-  opacity:0.2;
+  padding-left: 10px;
 }
 
-.partner-2 {
+.partner:nth-of-type(2) {
   text-align: center;
-  background: url("../img/partner_2.png") no-repeat center;
-  opacity:0.2;
 }
 
-.partner-3 {
+
+.partner:nth-of-type(3) {
   text-align: right;
-  background: url("../img/partner_3.png") no-repeat center;
-  opacity:0.2;
 }
 
-.partner:hover {
+.partner a:hover {
   opacity: 1;
 }
 
@@ -765,7 +777,7 @@ form .btn:hover {
 
 form .btn:active {
   background-color: #d5d5d5;
-  box-shadow:inset 0 5px 0 0 #b5b5b5;
+  box-shadow: inset 0 5px 0 0 #b5b5b5;
 }
 
 .container .cards-layout {
@@ -817,7 +829,7 @@ form .btn:active {
   background-position: -30px -394px;
 }
 
-.icon-up:active::after{
+.icon-up:active::after {
   background: url("../img/sprite.png") no-repeat;
   background-position: -3px -394px;
 }
@@ -850,8 +862,8 @@ form .btn:active {
   margin: 0;
 }
 
-.sorting li{
-  display:inline;
+.sorting li {
+  display: inline;
   padding: 0;
   margin: 0;
   margin-right: 40px;
@@ -878,7 +890,7 @@ form .btn:active {
   border-bottom: none;
 }
 
-.sorting span:active{
+.sorting span:active {
   color: #000000;
 }
 
@@ -886,7 +898,7 @@ form .btn:active {
   position: relative;
   float: right;
   width: 240px;
-  height: 270px;
+  min-height: 270px;
   margin-left: 80px;
   margin-bottom: 80px;
   background-color: #f1f1f1;
@@ -916,7 +928,7 @@ form .btn:active {
 }
 
 .card img {
-  display:block;
+  display: block;
   max-width: 100%;
   height: auto;
   margin-top: 30px;
@@ -929,7 +941,7 @@ form .btn:active {
   bottom: 20px;
   left: 20px;
   width: 140px;
-  height: 135px;
+  min-height: 135px;
   background-color: #ffffff;
   text-align: center;
   padding: 30px;
@@ -974,25 +986,25 @@ form .btn:active {
 }
 
 .cards-layout .catalog-pages {
- float: left;
- font-size: 0;
- max-width: 550px;
- margin: 0;
- padding: 0;
- margin: 0;
- list-style: none;
- font-size: 0;
+  float: left;
+  font-size: 0;
+  max-width: 550px;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
 }
 
-.catalog-pages li{
-  display:inline-block;
-  padding:0;
-  margin:0;
+.catalog-pages li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   font-size: 12px;
   line-height: 18px;
-  vertical-align:top;
-  text-align:center;
-  text-decoration:none;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
 }
 
 .catalog-pages .btn {
@@ -1046,28 +1058,18 @@ form .btn:active {
 }
 
 .main-footer .map {
-  height: 415px;
+  min-height: 415px;
   padding: 0;
   margin: 0;
   background: url("../img/map.jpg") no-repeat center 0;
   background-size: cover;
 }
 
-.main-footer .marker {
-  position: absolute;
-  z-index: 3;
-  bottom: 46%;
-  right: 11%;
-  width: 190px;
-  height: 190px;
-  background: url("../img/marker.png") no-repeat 0 0;
-}
-
 .main-footer .contact {
   position: absolute;
   z-index: 2;
-  bottom: 42%;
-  left: 10%;
+  bottom: 304px;
+  left: 110px;
   width: 250px;
   height: 240px;
   background-color: #ffffff;
@@ -1097,7 +1099,7 @@ form .btn:active {
   line-height: 20px;
   font-weight: 500;
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #60666a;
 }
 
